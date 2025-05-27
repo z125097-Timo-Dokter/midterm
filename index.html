@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timo's Portfolio</title>
+
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/description-switcher.css" />
+    </head>
+    <body>
+        <main>
+            <section id="hero">
+                <div class="content-container">
+                    <div id="hero-text">
+                        <h4>Hi,</h4>
+                        <h1>I'm <em>Timo</em></h1>
+                        <h4>And I am a <em id="description-switcher"></em></h4>
+                    </div>
+                    <div id="hero-image">
+                        <img
+                            src="./assets/images/portrait.png"
+                            alt="Hero Image"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="about-me">
+                <div class="content-container">
+                    <div class="about-me-text">
+                        <h2>About <em>Me</em></h2>
+                        <p>
+                            I am a game-development student with a passion for
+                            creating immersive experiences. I have a strong
+                            foundation in programming, game design, and 3D
+                            modeling. I am always eager to learn new
+                            technologies and improve my skills.
+                        </p>
+                    </div>
+                    <div id="about-me-image">
+                        <img
+                            src="./assets/images/about-me.png"
+                            alt="About Me Image"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="content-container">
+                    <h2>Projects</h2>
+                    <div id="projects-container">
+                        <div class="project">
+                            <h3>Ant game</h3>
+                            <img src="./assets/images/projects/ant-game.png" />
+                            <p>
+                                Ant game is a 3D game which I made with a group
+                                of other students for a school project. For this
+                                project I was mainly responsible for the
+                                movement mechanics of the player and for the AI
+                                of the ant queen. The game is made in Unity.
+                            </p>
+                            <a href="https://martijn24.itch.io/antgame">
+                                Play the game
+                            </a>
+                        </div>
+                        <div class="project">
+                            <h3>Dutchband Banddesigner</h3>
+                            <img src="./assets/images/projects/dutchband.png" />
+                            <p>
+                                The Dutchband Banddesigner is a web application
+                                where you can customize and order bracelets for
+                                festivals. The entire application was made using
+                                Django, which is a python framework, and the
+                                designer part of the applicaton was made in
+                                React.
+                            </p>
+                        </div>
+                        <div class="project">
+                            <h3>DnD Campaign</h3>
+                            <img src="./assets/images/projects/dnd.png" />
+                            <p>
+                                I am running my own DnD campaign for a group of
+                                friends. It may not seem all that interesting to
+                                put on my portfolio, but I think I have learned
+                                a lot and I have improved my skills in
+                                storytelling and thinking on the fly. And I have
+                                practiced my worldbuilding skills a lot. As well
+                                as a lot of different skills that can be usefull
+                                to any kind of game developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="./assets/js/description-switcher.js"></script>
+    </body>
+</html>

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: #212222;
+    --secondary-color: #d1d5db;
+    --accent-color: #ff662d;
+    --primary-color-light: #444;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0 0 1rem;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+em {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 32px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 1rem;
+}
+
+#hero {
+    color: var(--primary-color);
+}
+
+#hero .content-container {
+    display: grid;
+}
+
+#hero-content p {
+    max-width: 75%;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: absolute;
+    right: 0;
+    width: 25%;
+}
+
+#hero-image img {
+    width: 100%;
+    max-width: 256px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+#about-me {
+    background-image: linear-gradient(
+        var(--secondary-color) 25%,
+        var(--primary-color)
+    );
+    color: var(--primary-color);
+}
+
+#about-me .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+#about-me-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-image img {
+    width: 100%;
+    width: 256px;
+    max-width: 256px;
+    height: auto;
+}
+
+#projects {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    gap: 32px;
+}
+
+.project {
+    background-color: var(--primary-color-light);
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+    margin: 0;
+}
+
+@media (width >= 40rem) {
+    #about-me .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4rem;
+    }
+
+    #projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 32px;
+    }
+}
+
+@media (width >= 64rem) {
+    .content-container {
+        max-width: 1024px; /* Limit the width of the content inside each section */
+        margin: 0 auto; /* Center the content container horizontally */
+        padding: 32px 1rem; /* Add consistent padding to the content within the container */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    #hero .content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hero-image {
+        position: relative;
+    }
+
+    #about-me p {
+        max-width: 75%;
+    }
+}
